@@ -1,0 +1,35 @@
+.card-ec {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  width: 100px;
+  margin: 0 1rem;
+  border-radius: 50px;
+  flex: 0.5;
+  cursor: pointer;
+  transition: flex 0.7s ease-in;
+}
+
+.card-ec h3 {
+  color: #f7f5f6;
+  font-family: 'Segoe UI Variable semi-bold', sans-serif;
+  /* font-size: 2.5rem; */
+  font-size: 1.25rem;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  margin: 0;
+  opacity: 0;
+}
+
+.card-ec.active-ec {
+  flex: 5;
+}
+
+.card-ec.active-ec h3 {
+  opacity: 1;
+}

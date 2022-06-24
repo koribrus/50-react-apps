@@ -1,0 +1,187 @@
+.header-p {
+  background-color: #f7f5f6;
+  height: 25vh;
+}
+
+.header-p h1 {
+  font-size: 2rem;
+}
+
+/* ----- NAVBAR ----- */
+.navbar-lib {
+  height: 7vh;
+  box-shadow: 0 1px 5px 2px #141414;
+}
+
+.navbar-top-p {
+  background-color: #7a7a7a;
+  width: 100vw;
+  height: 0.5vh;
+}
+
+.navbar-content-p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5vh;
+}
+
+/* ----- navbar logo ----- */
+.navbar-logo-p p {
+  color: #141414;
+  margin: 0;
+}
+
+.navbar-logo-p:hover p {
+  color: #7a7a7a;
+  opacity: 0.9;
+}
+
+.navbar-content-p p {
+  color: #141414;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+}
+
+/* ----- MENU --------------- */
+/* ----- selector ----- */
+.apps-menu {
+  width: 400px;
+  padding: 0 4rem;
+  z-index: 1;
+}
+
+.apps-menu-cntrl {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apps-menu-cntrl h4 {
+  color: #333333;
+  font-family: 'Segoe UI Variable semi-light', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.apps-menu-line {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #141414;
+}
+
+/* ----- dropdown ----- */
+.dropdown-container {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 1s, box-shadow ease 1s;
+}
+
+.apps-dropdown {
+  background: linear-gradient(to bottom, #f7f5f666, #b7afac);
+  color: #4c4c4c;
+  width: 272px;
+
+  font-family: 'Segoe UI Variable semi-light', sans-serif;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.apps-dropdown a {
+  color: #333333;
+  cursor: pointer;
+}
+
+.apps-dropdown-item {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px dotted #4c4c4c;
+}
+
+.apps-dropdown-item:hover {
+  background-color: #b3aba8e6;
+}
+
+.apps-dropdown-item:hover .dropdown-count {
+  background-color: #4c4c4c80;
+}
+
+.dropdown-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: middle;
+  width: 23px;
+  height: 23px;
+  color: #f7f5f6;
+  background-color: #7a7a7a80;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.coming-soon span:last-child {
+  font-size: 12px;
+  font-style: italic;
+  text-align: end;
+  align-self: flex-end;
+}
+
+/* ----- banner ----- */
+.banner-p {
+  position: relative;
+  height: 18vh;
+  background-image: url('../../public/img/keyboard.jpg');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay-p {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background: #4c4c4c99;
+}
+
+.banner-p h1 {
+  color: #ffffff;
+  font-family: 'Segoe UI Variable light', serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  padding: 0.5rem 0;
+}
+
+.banner-p p {
+  color: var(--tertiary-text-lib);
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.7rem;
+}
+
+.banner-title {
+  color: #ffffff;
+}
